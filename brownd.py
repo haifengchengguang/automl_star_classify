@@ -14,4 +14,5 @@ df_train,df_test=train_test_split(df,test_size=0.2,random_state=1)
 save_path = './BDmodels/'
 predictor = TabularPredictor(label='subclass',path=save_path).fit(train_data=df_train)
 #num_stack_levels=1,num_bag_folds=5
+
 #predictions = predictor.predict(test_data)
