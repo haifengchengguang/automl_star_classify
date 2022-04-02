@@ -13,4 +13,5 @@ df_train,df_test=train_test_split(df,test_size=0.2,random_state=1)
 #test_data = TabularDataset('https://autogluon.s3.amazonaws.com/datasets/Inc/test.csv')
 save_path = './BDmodels/'
 predictor = TabularPredictor(label='subclass',path=save_path).fit(train_data=df_train)
+#num_stack_levels=1,num_bag_folds=5
 #predictions = predictor.predict(test_data)
